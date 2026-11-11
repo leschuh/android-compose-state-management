@@ -17,6 +17,47 @@ Am 17.11. programmiert ihr selbst. Erledigt deshalb diese drei Schritte **zu Hau
 
 Klappt etwas nicht, schaut in die [häufigen Probleme](ANLEITUNG.md#häufige-probleme). Hilft das nicht, meldet euch vor dem Termin bei uns.
 
+## Schnellstart
+
+Für alle, die Android Studio schon haben. Die ausführliche Variante steht in der [Anleitung](ANLEITUNG.md).
+
+**Das braucht ihr**
+
+| | Version |
+|---|---|
+| Android Studio | Quail 4 (2026.1.4) oder neuer |
+| SDK Platform (SDK Manager) | **API 37** (zum Bauen) und **API 36** |
+| Emulator | System-Image **API 36**, Google APIs. Alternativ ein Handy ab Android 8.0 (API 26) |
+| Java, Gradle | nichts installieren, Android Studio und der Gradle-Wrapper bringen alles mit |
+
+**1. Klonen**, in einen kurzen Pfad ohne Leerzeichen, Umlaute und OneDrive. Unter Windows in der PowerShell:
+
+```powershell
+mkdir C:\dev
+cd C:\dev
+git clone https://github.com/leschuh/android-compose-state-management.git
+```
+
+Auf dem Mac und unter Linux im Terminal `mkdir ~/dev && cd ~/dev`, danach derselbe `git clone`.
+
+**2. Öffnen:** In Android Studio *File > Open* wählen und den Ordner **`android-compose-state-management/beispiel-app`** öffnen, **nicht** das ganze Repo.
+
+**3. Gradle-Sync abwarten:** Das dauert beim ersten Mal bis zu 10 Minuten, den Fortschritt seht ihr unten rechts.
+
+**4. Starten:** Oben den Emulator wählen und auf **Run ▶** klicken. Ihr seht den Startbildschirm mit den Stufen.
+
+Wenn ihr die Kommandozeile lieber mögt, könnt ihr optional so prüfen, ob alles baut:
+
+```bash
+cd android-compose-state-management/beispiel-app
+./gradlew assembleDebug        # bauen; unter Windows: .\gradlew.bat assembleDebug
+./gradlew testDebugUnitTest    # Unit-Tests; unter Windows: .\gradlew.bat testDebugUnitTest
+```
+
+**Änderungen verwerfen:** `git restore .` setzt alles auf den Ausgangsstand zurück.
+
+Für die Leistungsbewertung öffnet ihr später genauso `leistungsbewertung/trainingstagebuch`.
+
 ## Was liegt wo?
 
 | Pfad | Inhalt | Wann |
