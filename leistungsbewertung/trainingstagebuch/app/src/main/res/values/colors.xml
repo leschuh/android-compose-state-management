@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Petrol (= primary Light aus ui/theme/Theme.kt) -->
+    <color name="ic_launcher_background">#FF00677A</color>
+    <!-- = surface aus ui/theme/Theme.kt (Light) -->
+    <color name="window_background">#FFF6FAFC</color>
+</resources>

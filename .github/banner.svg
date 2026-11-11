@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" role="img" aria-label="State Management in Jetpack Compose">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F3FC"/>
+      <stop offset="1" stop-color="#E4DDFB"/>
+    </linearGradient>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5B34E0"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="320" rx="20" fill="url(#g)"/>
+  <rect x="56" y="74" width="6" height="172" rx="3" fill="#5B34E0"/>
+  <g font-family="Inter, 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+    <text x="84" y="98" font-size="19" font-weight="600" letter-spacing="2" fill="#5B34E0">APP-LABOR AI3 · HOCHSCHULE HEILBRONN</text>
+    <text x="84" y="160" font-size="52" font-weight="700" fill="#16182B">State Management</text>
+    <text x="84" y="216" font-size="52" font-weight="700" fill="#16182B">in Jetpack Compose</text>
+    <text x="84" y="250" font-size="21" fill="#5A6080">Zwei Lerneinheiten · Beispiel-App · Übungen · Leistungsbewertung</text>
+
+    <g font-size="22" font-weight="600" text-anchor="middle">
+      <rect x="880" y="54" width="300" height="72" rx="14" fill="#5B34E0"/>
+      <text x="1030" y="99" fill="#FFFFFF">ViewModel</text>
+      <rect x="880" y="194" width="300" height="72" rx="14" fill="#FFFFFF" stroke="#C9BEF4" stroke-width="2"/>
+      <text x="1030" y="239" fill="#16182B">Compose-UI</text>
+    </g>
+    <g stroke="#5B34E0" stroke-width="3" fill="none">
+      <line x1="960" y1="132" x2="960" y2="186" marker-end="url(#pfeil)"/>
+      <line x1="1100" y1="188" x2="1100" y2="134" marker-end="url(#pfeil)"/>
+    </g>
+    <g font-size="18" font-weight="600" fill="#5B34E0">
+      <text x="950" y="166" text-anchor="end">State</text>
+      <text x="1110" y="166">Events</text>
+    </g>
+  </g>
+</svg>
