@@ -17,26 +17,19 @@ Der Code liegt in `app/src/main/java/de/hhn/mplab/statemanagement/uebung1/Uebung
 
 ## Ablauf
 
-Ein Build dauert je nach Laptop eine halbe bis eine Minute. Deshalb erst lesen und alle Fehler beheben, dann **einmal** bauen.
+Ein Build dauert je nach Laptop eine halbe bis eine Minute. Deshalb erst alle Fehler beheben, dann **einmal** bauen.
 
-### Schritt 1: Lesen und vorhersagen (ca. 4 Min)
+### Schritt 1: Fehler suchen (ca. 3 Min)
 
-Lest den Code, **ohne** die App zu bedienen. Schreibt auf:
+Öffnet `Uebung1Screen.kt` und vergleicht den Code mit Stufe 1 (`Stufe1LokalerState.kt`) und Stufe 3 (`Stufe3Saveable.kt`) der Beispiel-App.
 
-1. Was passiert, wenn ihr auf „Artikel zur Liste hinzufügen“ tippt?
-2. Was passiert mit Zähler, Notiz und Liste, wenn ihr das Gerät dreht?
+### Schritt 2: Alle drei Fehler beheben (ca. 10 Min)
 
-### Schritt 2: In der App prüfen (ca. 3 Min)
+- Die Liste soll sich sofort aktualisieren, wenn ein Artikel hinzugefügt oder abgehakt wird.
+- Zähler und Notiz sollen das Drehen überstehen.
+- Auch die Liste soll das Drehen überstehen.
 
-Startet die App (sie ist schon gebaut, wenn ihr sie vorher einmal gestartet habt) und probiert beides aus. Wo lagt ihr richtig, wo nicht?
-
-### Schritt 3: Alle drei Fehler beheben (ca. 7 Min)
-
-- Die Liste aktualisiert sich nicht, wenn ein Artikel hinzugefügt oder abgehakt wird. Erklärt in einem Satz, warum, und ändert den Code so, dass jede Änderung sofort sichtbar ist.
-- Zähler und Notiz gehen beim Drehen verloren. Sorgt dafür, dass beide das Drehen überstehen.
-- Übersteht danach auch die Liste das Drehen? Falls nicht: beheben.
-
-### Schritt 4: Einmal bauen und testen (ca. 3 Min)
+### Schritt 3: Einmal bauen und testen (ca. 4 Min)
 
 Startet die App neu und testet: Artikel hinzufügen, einen abhaken, drehen, Home drücken und die App wieder öffnen. Alles muss erhalten bleiben.
 
@@ -53,4 +46,4 @@ Ergänzt eine Checkbox „Nur offene anzeigen“. Ist sie aktiv, werden abgehakt
 - Spickzettel: Stufe 1 und Stufe 3 der Beispiel-App.
 - `Item` ist schon `@Parcelize`.
 - Ein abgeleiteter Wert (z. B. die gefilterte Liste) braucht keinen eigenen State.
-- Baut es bei euch nicht? Setzt euch zu jemandem, bei dem es läuft, und macht Schritt 1 und 3 auf Papier.
+- Baut es bei euch nicht? Setzt euch zu jemandem, bei dem es läuft.

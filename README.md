@@ -76,7 +76,7 @@ Die Folien findet ihr in ILIAS.
 ## Leistungsbewertung in Kürze
 
 - Einzelarbeit, ca. 4 Stunden, 100 Punkte. Alle Details stehen in [`aufgabe.md`](leistungsbewertung/aufgabe.md).
-- Die Frist steht in ILIAS.
+- Abgabe bis **Montag, 23.11.2026, 0:00 Uhr** (Nacht von Sonntag auf Montag).
 - Abgabe als ZIP-Datei **in ILIAS**, nicht hier. Dazu gehört die unterschriebene Eigenständigkeitserklärung.
 - KI-Werkzeuge sind erlaubt, müssen aber angegeben werden.
 - Bitte ladet eure Lösung nicht in ein öffentliches Repo hoch.

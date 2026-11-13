@@ -6,7 +6,7 @@ Mobility Project Lab · App-Labor AI3 · Lerneinheiten „State Management in Je
 |---|---|
 | Bearbeitung | einzeln |
 | Aufwand | ca. 4 Stunden |
-| Abgabe | ZIP-Datei über ILIAS, Frist siehe ILIAS |
+| Abgabe | ZIP-Datei über ILIAS bis **Montag, 23.11.2026, 0:00 Uhr** (Nacht von Sonntag auf Montag) |
 | Bewertung | 100 Punkte, Raster siehe unten |
 
 ## Worum es geht

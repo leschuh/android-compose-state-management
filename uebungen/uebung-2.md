@@ -34,8 +34,8 @@ Jede Zeile bekommt einen Button „Löschen“.
 
 Über der Liste soll stehen, wie viele Einträge noch offen sind, z. B. „2 offen“.
 
-- Nutzt `openCount` aus `ShoppingListUiState`.
-- **Kein** zusätzliches State-Feld, kein eigener Zähler, der beim Hinzufügen/Abhaken/Löschen mitgezählt wird. Warum wäre das eine schlechte Idee?
+- Nutzt `openCount` aus `ShoppingListUiState` und reicht ihn als neuen Parameter an `ShoppingListContent` weiter. In `Stufe4Screen` und in der Preview braucht ihr dann ebenfalls einen Wert, der Compiler zeigt euch die Stellen.
+- **Kein** zusätzliches State-Feld, kein eigener Zähler, der beim Hinzufügen/Abhaken/Löschen mitgezählt wird.
 
 ### Aufgabe 4 (Bonus): Unit-Test für `onDelete`
 
