@@ -5,15 +5,20 @@ Mobility Project Lab · App-Labor AI3 · Lerneinheiten „State Management in Je
 | | |
 |---|---|
 | Bearbeitung | einzeln |
-| Aufwand | ca. 4 Stunden |
 | Abgabe | ZIP-Datei über ILIAS bis **Montag, 23.11.2026, 0:00 Uhr** (Nacht von Sonntag auf Montag) |
-| Bewertung | 100 Punkte, Raster siehe unten |
+| Bewertung | 100 Punkte, Überblick unten |
 
 ## Worum es geht
 
-Sie bekommen die App **„Trainingstagebuch“**. Sie läuft, sieht ordentlich aus und wirkt auf den ersten Blick fertig. Im Code stecken aber **mindestens fünf Fehler im Umgang mit State**. Die genaue Anzahl verraten wir nicht.
+Sie bekommen die App **„Trainingstagebuch“**. Sie läuft und sieht fertig aus, im Code stecken aber mehrere Fehler im Umgang mit State, ganz ähnlich wie in den Lerneinheiten. Für die volle Punktzahl reichen **fünf Fehler**.
 
-Ihre Aufgabe hat vier Schritte: **finden, beheben, begründen, zeichnen.** Dazu kommt ein kurzer Prüfauftrag, der nur in der App steht.
+Pro Fehler machen Sie drei Dinge:
+
+1. **Screenshot vorher:** den Fehler in der App zeigen.
+2. **Beheben:** den Code ändern und direkt über die geänderte Zeile einen kurzen Kommentar schreiben.
+3. **Screenshot nachher:** zeigen, dass der Fehler weg ist.
+
+Zum Schluss zeichnen Sie per Hand ein Diagramm, wem welcher State gehört. Dazu kommt ein kurzer Prüfauftrag, der nur in der App steht.
 
 ## Die App
 
@@ -26,115 +31,97 @@ Ein Trainingstagebuch für das heutige Training im Gym.
 - **Detail-/Bearbeitungsansicht:** über „Bearbeiten“ in einer aufgeklappten Karte. Werte ändern und speichern, mit „Vorherige“/„Nächste“ durch die Übungen blättern, Übung löschen.
 - **Menü (⋮):** „Neue Trainingseinheit“ setzt alle Haken zurück.
 
-Erwartetes Verhalten, an dem Sie sich orientieren können: Die App soll sich so verhalten, wie man es von einer gepflegten App aus dem Play Store erwartet. Eingaben gehen nicht verloren, Anzeigen stimmen mit den Daten überein, Aktionen wirken sofort.
+Die App soll sich so verhalten, wie man es von einer gepflegten App aus dem Play Store erwartet: Eingaben gehen nicht verloren, Anzeigen stimmen mit den Daten überein, Aktionen wirken sofort.
 
 ## Vorbereitung
 
 1. GitHub-Repo klonen oder als ZIP herunterladen (Einrichtung: `ANLEITUNG.md` im Repo). Ordner `leistungsbewertung/trainingstagebuch/` in Android Studio öffnen (*File → Open*), nicht das ganze Repo.
 2. Gradle-Sync abwarten, App auf Emulator oder Gerät starten (minSdk 26).
 3. **Automatisches Drehen aktivieren.** Im Emulator drehen Sie mit den Rotations-Buttons in der Seitenleiste oder mit Strg/Cmd + Pfeiltaste.
-4. **App freischalten.** Tippen Sie unten in der App auf den Balken und geben Sie Nachname, Matrikelnummer und den Freischaltcode ein. Den Freischaltcode stellen wir nach Lerneinheit 2 in ILIAS. Danach zeigt der Balken Ihren persönlichen **Beleg-Code** (`Nachname · TT-XXXXXX`). Er bleibt gespeichert, auch nach dem Drehen und nach einem Neustart der App, und Sie brauchen ihn auf jedem Screenshot.
+4. **App freischalten.** Tippen Sie unten in der App auf den Balken und geben Sie Nachname, Matrikelnummer und den Freischaltcode ein. Den Freischaltcode zeigen wir am Ende von Lerneinheit 2 auf der Folie „Rahmen und Abgabe“. Wer an dem Termin nicht da sein kann, meldet sich bei uns. Danach zeigt der Balken Ihren persönlichen **Beleg-Code** (`Nachname · TT-XXXXXX`). Er bleibt gespeichert, auch nach dem Drehen und nach einem Neustart der App.
 
-Der Balken und das Package `submission` gehören nicht zur Aufgabe und enthalten keine Fehler. Ändern Sie dort nichts.
+Der Balken und das Package `submission` gehören nicht zur Aufgabe und enthalten keine Fehler. Ändern Sie dort bitte nichts.
 
 ## Aufgaben
 
-### 1. Fehler finden und reproduzieren
+### 1. Fehler finden
 
-Benutzen Sie die App gründlich, bevor Sie in den Code schauen. Probieren Sie systematisch typische Situationen durch, zum Beispiel:
+Probieren Sie die App in Ruhe aus, bevor Sie in den Code schauen. Gute Stellen zum Suchen:
 
-- Konfigurationsänderungen (Drehen) in jeder Ansicht und mit offenem Dialog
-- Listenoperationen (Hinzufügen, Abhaken, Löschen) an verschiedenen Positionen und in Kombination
-- Filter in Kombination mit anderen Aktionen
-- Wechsel zwischen Ansichten und Blättern in der Detailansicht
+- Drehen, in jeder Ansicht und mit offenem Dialog
+- Hinzufügen, Abhaken und Löschen an verschiedenen Stellen der Liste
+- Filter zusammen mit anderen Aktionen
+- Wechsel zwischen Liste und Detailansicht, Blättern in der Detailansicht
 
-Halten Sie für jeden Fehler fest:
+Haben Sie einen Fehler gefunden, machen Sie **gleich einen Screenshot**, bevor Sie etwas ändern. Nehmen Sie den ganzen Bildschirm auf, damit der Balken mit Ihrem Beleg-Code zu sehen ist (Bildschirmtastatur vorher schließen, falls sie ihn verdeckt).
 
-- **Reproduktion:** genaue Klickfolge am Gerät/Emulator (inkl. Drehen), so dass jemand anderes den Fehler nachstellen kann.
-- **Belegscreenshots:** mindestens zwei Screenshots vom Emulator oder Gerät, einer mit dem fehlerhaften Verhalten und einer mit demselben Ablauf nach Ihrem Fix. Auf jedem Screenshot muss der Balken mit **Ihrem Beleg-Code** zu sehen sein. Nehmen Sie deshalb den ganzen Bildschirm auf, ohne Zuschneiden, und schließen Sie vorher die Bildschirmtastatur, falls sie den Balken verdeckt. Machen Sie die Screenshots vom fehlerhaften Verhalten, bevor Sie den Fehler beheben. Die Screenshots belegen, dass Sie den Fehler selbst am Gerät gefunden haben. Ohne solche Screenshots gibt es für die Reproduktion keine Punkte.
-- **Beobachtet vs. erwartet:** Was passiert? Was müsste passieren? Nennen Sie konkrete Werte aus Ihrem eigenen Durchlauf, passend zu Ihren Screenshots.
-- **Ort im Code:** Datei und Zeile(n).
+### 2. Fehler beheben und kommentieren
 
-### 2. Fehler beheben
+- Ändern Sie nur so viel wie nötig und nur Code, der zu einem gefundenen Fehler gehört. Keine Umbauten der ganzen App.
+- Schreiben Sie **direkt über jede geänderte Zeile** einen Kommentar mit einem kurzen Satz: was Sie geändert haben und warum. Gern mit einem Begriff aus den Lerneinheiten, zum Beispiel:
 
-- Beheben Sie jeden gefundenen Fehler mit einer **möglichst kleinen, gezielten Änderung**. Keine Umbauten der ganzen App.
-- Ändern Sie nur Code, der zu einem dokumentierten Fehler gehört.
-- Geben Sie jeden Fix als **Diff** an (z. B. `git diff`, oder Vorher/Nachher-Ausschnitt im Format `- alte Zeile` / `+ neue Zeile`).
-- Prüfen Sie nach jedem Fix am Gerät, dass der Fehler weg ist und nichts anderes kaputtgegangen ist.
-
-Tipp: Wenn Sie das Repo geklont haben, liefert `git diff` die Diffs fast von selbst. Wer das ZIP heruntergeladen hat, legt vor dem ersten Fix ein lokales Git-Repository an (`git init`, erster Commit). Laden Sie Ihre Lösung nicht in ein öffentliches Repo hoch.
-
-### 3. Begründen
-
-Erklären Sie pro Fehler in 3–6 Sätzen, **warum** der Fehler auftritt und **warum** Ihr Fix ihn behebt. Verwenden Sie die Fachbegriffe aus den Lerneinheiten, z. B. Recomposition, beobachtbarer State, `remember` vs. `rememberSaveable`, Konfigurationsänderung, State Hoisting, Single Source of Truth, abgeleiteter State, Unidirectional Data Flow, ViewModel-Lebensdauer. Die Begründung muss sich auf das **beobachtete Verhalten dieser App** beziehen, nicht nur allgemein sein.
-
-### 4. Zustandsdiagramm „Wem gehört welcher State?“
-
-Zeichnen Sie für diese App zwei Diagramme:
-
-- **Vorher:** Welche State-Werte gibt es, wo liegen sie (ViewModel, welches Composable, `remember`/`rememberSaveable`, gar nicht beobachtbar), wie fließen Daten nach unten und Events nach oben? Markieren Sie die Stellen, an denen die Fehler entstehen.
-- **Nachher:** derselbe Ausschnitt nach Ihren Fixes.
-
-Gemeint ist **kein UML-Zustandsautomat** mit Zuständen und Übergängen, sondern eine Skizze, wem welcher State gehört und wie Daten und Events fließen. So sieht das für eine andere App aus, die Einkaufsliste aus den Lerneinheiten (Stufe 5), stark verkürzt:
-
-```mermaid
-flowchart TD
-    VM["ShoppingListViewModel<br/>StateFlow: items, input, showOnlyOpen"]
-    S5["Stufe5Screen<br/>kein eigener State, sammelt uiState"]
-    C["ShoppingListContent<br/>zustandslos"]
-    VM -->|"uiState"| S5
-    S5 -->|"visibleItems, input, showOnlyOpen"| C
-    C -.->|"onAdd, onToggle, onFilterChange"| VM
+```kotlin
+// Fehler 1: rememberSaveable statt remember, damit der Text das Drehen übersteht.
+var name by rememberSaveable { mutableStateOf("") }
 ```
 
-Für das Trainingstagebuch gehören mehr Composables und State-Werte dazu, und im Vorher-Diagramm markieren Sie die Fehlerstellen.
+- Machen Sie danach denselben Ablauf noch einmal und einen **Screenshot nachher**, auf dem der Fehler weg ist.
 
-Form: Mermaid (in `abgabe.md`) oder saubere Handskizze/Zeichnung als Bild (PNG/JPG/PDF) im ZIP. Beides ist gleichwertig.
+### 3. Diagramm „Wem gehört welcher State?“ (per Hand)
+
+Zeichnen Sie **per Hand** (Papier oder Tablet) zwei Skizzen:
+
+- **Vorher:** Welche State-Werte gibt es und wo liegen sie (ViewModel, welches Composable, `remember` oder `rememberSaveable`)? Wie fließen Daten nach unten und Events nach oben? Markieren Sie, wo die Fehler entstehen.
+- **Nachher:** derselbe Ausschnitt nach Ihren Fixes.
+
+Gemeint ist eine einfache Skizze, kein UML. Für die Einkaufsliste aus den Lerneinheiten (Stufe 5) sähe das stark verkürzt so aus:
+
+```
+ShoppingListViewModel       State: items, input, showOnlyOpen
+        |  uiState (nach unten)
+        v
+Stufe5Screen                kein eigener State
+        |  visibleItems, input, showOnlyOpen (nach unten)
+        v
+ShoppingListContent         zustandslos
+        :  onAdd, onToggle, onFilterChange (Events nach oben, zurück ans ViewModel)
+```
+
+Fotografieren oder scannen Sie beide Skizzen und legen Sie sie als PNG, JPG oder PDF in den Ordner `diagramme/`.
 
 ## Prüfauftrag aus der App
 
-Ein Teil der Aufgabe steht nur in der App. Nach dem Freischalten (siehe Vorbereitung) zeigt sie ihn, wenn Sie auf den Balken tippen. Der Prüfauftrag besteht aus kurzen Abläufen mit persönlichen Werten, die Sie in Ihrer korrigierten App durchführen. Tragen Sie die Ergebnisse in `abgabe.md` im Abschnitt „Prüfauftrag aus der App“ ein und legen Sie die verlangten Screenshots bei, ebenfalls mit sichtbarem Beleg-Code.
+Ein kleiner Teil der Aufgabe steht nur in der App. Nach dem Freischalten zeigt sie ihn, wenn Sie auf den Balken tippen. Es sind kurze Abläufe, die Sie in Ihrer korrigierten App durchspielen. Tragen Sie die Werte in `abgabe.md` ein und legen Sie die Screenshots dazu bei.
 
 ## Nutzung von KI
 
-KI-Werkzeuge (ChatGPT, Copilot, Gemini in Android Studio, Claude …) **dürfen** Sie verwenden. Sie müssen aber in `abgabe.md` angeben:
-
-- welches Werkzeug,
-- **wofür** (z. B. „Erklärung einer Compose-Funktion“, „Vorschlag für Fix 3“),
-- **was Sie übernommen haben** und was Sie verworfen oder geändert haben.
-
-Bewertet wird, was Sie selbst geprüft und begründet haben. Reproduktionsschritte und Prüfauftrag müssen Sie selbst am Gerät/Emulator durchgeführt und mit Screenshots belegt haben.
-
-Fehlende oder falsche Angaben zur KI-Nutzung führen zu Abzug (siehe Raster).
+KI-Werkzeuge (ChatGPT, Copilot, Gemini in Android Studio, Claude …) dürfen Sie verwenden. Geben Sie in `abgabe.md` kurz an, welches Werkzeug Sie wofür benutzt haben.
 
 ## Abgabe
 
-Eine ZIP-Datei `Nachname_Vorname_Trainingstagebuch.zip` mit:
+Eine ZIP-Datei `Vorname_Nachname_Matrikelnummer.zip` mit:
 
 ```
-Nachname_Vorname_Trainingstagebuch.zip
-├── abgabe.md                 ← ausgefüllte Vorlage (abgabe-vorlage.md)
-├── eigenstaendigkeitserklaerung.pdf  ← ausgefüllt und unterschrieben (Scan oder Foto geht auch)
-├── screenshots/              ← Belegscreenshots, z. B. fehler1_fehlerhaft.png, fehler1_behoben.png, pruefauftrag1.png
-├── diagramme/                ← nur falls Sie Bilder statt Mermaid verwenden
-└── trainingstagebuch/        ← das korrigierte Projekt
+Vorname_Nachname_Matrikelnummer.zip
+├── abgabe.md                         ausgefüllte Vorlage (abgabe-vorlage.md)
+├── eigenstaendigkeitserklaerung.pdf  ausgefüllt und unterschrieben (Scan oder Foto geht auch)
+├── screenshots/                      z. B. fehler1_vorher.png, fehler1_nachher.png, pruefauftrag1.png
+├── diagramme/                        vorher.jpg, nachher.jpg
+└── trainingstagebuch/                das korrigierte Projekt mit Ihren Kommentaren
 ```
 
-- Ohne ausgefüllte und unterschriebene Eigenständigkeitserklärung ist die Abgabe nicht vollständig. Die Vorlage liegt neben dieser Aufgabe.
-- Das Projekt muss sich in Android Studio öffnen, bauen und starten lassen.
+- Die unterschriebene Eigenständigkeitserklärung gehört dazu. Die Vorlage liegt neben dieser Aufgabe.
+- Das Projekt sollte sich in Android Studio öffnen, bauen und starten lassen.
 - Bitte **ohne** die Ordner `build/`, `app/build/`, `.gradle/`, `.idea/` und ohne `local.properties` packen.
-- Verwenden Sie die Vorlage `abgabe-vorlage.md` und benennen Sie sie in `abgabe.md` um.
+- Laden Sie Ihre Lösung bitte nicht in ein öffentliches Repo hoch.
 
 ## Bewertung (Überblick)
 
 | Teil | Punkte |
 |---|---|
-| Fehler: Reproduktion mit Screenshots, Fix, Begründung (5 Fehler à 12 P) | 60 |
-| Zustandsdiagramm vorher/nachher | 20 |
-| Qualität: App läuft, Prüfauftrag aus der App, Fixes minimal und sauber, Abgabe vollständig, KI-Angabe | 20 |
+| Fehler: Screenshots vorher und nachher, Fix, Kommentar (5 Fehler à 12 P) | 60 |
+| Diagramm vorher/nachher, per Hand | 20 |
+| App läuft, Prüfauftrag, Fixes klein und sauber, Abgabe vollständig, KI-Angabe | 20 |
 | **Summe** | **100** |
-| Bonus: weiterer Fehler über fünf hinaus, vollständig dokumentiert | bis +6 |
 
-Die Gesamtpunktzahl ist auf 100 begrenzt.
-
-Viel Erfolg!
+Bei Fragen melden Sie sich gern bei uns. Viel Erfolg!

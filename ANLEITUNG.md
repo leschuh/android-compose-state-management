@@ -65,11 +65,11 @@ Fertig ist alles, wenn ihr in der App den Startbildschirm mit den Stufen seht un
 
 Im Emulator dreht ihr mit `Strg + ←/→` (Windows/Linux), `Cmd + ←/→` (Mac) oder den Dreh-Knöpfen in der Leiste neben dem Emulator. Das Kamerasymbol in derselben Leiste macht einen Screenshot, ihr findet ihn standardmäßig auf dem Desktop.
 
-**Trainingstagebuch: Balken unten in der App.** Im Trainingstagebuch seht ihr ganz unten einen schmalen Balken. Tippt darauf und gebt Nachname, Matrikelnummer und den Freischaltcode ein, den wir nach Lerneinheit 2 in ILIAS stellen. Danach zeigt der Balken euren persönlichen Beleg-Code, der auf jedem Screenshot der Leistungsbewertung zu sehen sein muss, und ein Tipp darauf öffnet den Prüfauftrag. Die Angaben bleiben gespeichert, ihr müsst sie nur einmal eingeben.
+**Trainingstagebuch: Balken unten in der App.** Im Trainingstagebuch seht ihr ganz unten einen schmalen Balken. Tippt darauf und gebt Nachname, Matrikelnummer und den Freischaltcode ein. Den Freischaltcode zeigen wir am Ende von Lerneinheit 2 auf der Folie „Rahmen und Abgabe“, schreibt ihn euch dort ab (im Folien-PDF hier im Repo steht er nicht). Danach zeigt der Balken euren persönlichen Beleg-Code, der auf jedem Screenshot der Leistungsbewertung zu sehen sein muss, und ein Tipp darauf öffnet den Prüfauftrag. Die Angaben bleiben gespeichert, ihr müsst sie nur einmal eingeben.
 
 ## 6. Git-Grundlagen
 
-Für die Übungen reicht das hier. In der Leistungsbewertung liefert Git euch die Diffs fast von selbst.
+Für die Übungen reicht das hier. In der Leistungsbewertung hilft Git euch, eure Änderungen im Blick zu behalten und einen misslungenen Versuch zurückzunehmen.
 
 ```bash
 git status                # was hat sich geändert?
@@ -81,7 +81,7 @@ git restore .             # alle ungespeicherten Änderungen verwerfen
 git pull                  # Korrekturen von uns holen
 ```
 
-Am besten committet ihr in der Leistungsbewertung nach jedem Fix einzeln, dann habt ihr pro Fehler einen eigenen Diff.
+Am besten committet ihr in der Leistungsbewertung nach jedem Fix einzeln. Mit `git diff` seht ihr vor dem Commit auch schnell, ob über jeder geänderten Zeile euer Kommentar steht.
 
 ## 7. Compose-Grundlagen
 

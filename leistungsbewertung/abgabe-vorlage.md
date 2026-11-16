@@ -3,58 +3,20 @@
 **Name:**
 **Matrikelnummer:**
 **Beleg-Code:** TT-
-**Getestet auf:** (Emulator/Gerät, Android-Version)
 
 ---
 
 ## Gefundene Fehler
 
-> Kopieren Sie den Block für jeden weiteren Fehler.
+Was Sie geändert haben, steht als Kommentar im Code. Hier reicht eine Zeile pro Fehler.
 
-### Fehler 1: <kurzer Titel>
-
-**Ort im Code:** `app/src/main/java/.../Datei.kt`, Zeile …
-
-**Reproduktion:**
-1. …
-2. …
-3. …
-
-**Beobachtet:** …
-
-**Erwartet:** …
-
-**Screenshots:** `screenshots/fehler1_fehlerhaft.png`, `screenshots/fehler1_behoben.png` (der Balken mit Ihrem Beleg-Code muss sichtbar sein)
-
-**Fix:**
-```diff
-- alte Zeile
-+ neue Zeile
-```
-
-**Begründung (mit Fachbegriff):**
-…
-
----
-
-### Fehler 2: <kurzer Titel>
-
-**Ort im Code:**
-
-**Reproduktion:**
-1.
-
-**Beobachtet:**
-
-**Erwartet:**
-
-**Screenshots:**
-
-**Fix:**
-```diff
-```
-
-**Begründung (mit Fachbegriff):**
+| Nr. | Fehler in einem Satz | Datei und Zeile | Screenshot vorher | Screenshot nachher |
+|---|---|---|---|---|
+| 1 | | | `screenshots/fehler1_vorher.png` | `screenshots/fehler1_nachher.png` |
+| 2 | | | `screenshots/fehler2_vorher.png` | `screenshots/fehler2_nachher.png` |
+| 3 | | | `screenshots/fehler3_vorher.png` | `screenshots/fehler3_nachher.png` |
+| 4 | | | `screenshots/fehler4_vorher.png` | `screenshots/fehler4_nachher.png` |
+| 5 | | | `screenshots/fehler5_vorher.png` | `screenshots/fehler5_nachher.png` |
 
 ---
 
@@ -70,34 +32,16 @@
 
 ---
 
-## Zustandsdiagramm „Wem gehört welcher State?“
+## Diagramm
 
-### Vorher
-
-```mermaid
-flowchart TD
-    %% Ihr Diagramm (oder Verweis auf diagramme/vorher.png)
-```
-
-### Nachher
-
-```mermaid
-flowchart TD
-    %% Ihr Diagramm (oder Verweis auf diagramme/nachher.png)
-```
+Per Hand gezeichnet, liegt bei: `diagramme/vorher.jpg` und `diagramme/nachher.jpg` (PNG, JPG oder PDF)
 
 ---
 
 ## Nutzung von KI
 
-| Werkzeug | Wofür? | Was übernommen / verworfen / angepasst? |
-|---|---|---|
-| | | |
+| Werkzeug | Wofür? |
+|---|---|
+| | |
 
 - [ ] Ich habe keine KI-Werkzeuge verwendet.
-
----
-
-## Eigenständigkeitserklärung
-
-Die ausgefüllte und unterschriebene Erklärung (`eigenstaendigkeitserklaerung.pdf`, Vorlage neben der Aufgabe) liegt der ZIP-Datei bei.

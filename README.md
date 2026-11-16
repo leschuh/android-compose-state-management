@@ -63,6 +63,7 @@ Für die Leistungsbewertung öffnet ihr später genauso `leistungsbewertung/trai
 | Pfad | Inhalt | Wann |
 |---|---|---|
 | [`ANLEITUNG.md`](ANLEITUNG.md) | Android Studio, Emulator, Git, Compose-Grundlagen | vor dem Termin |
+| [`folien/`](folien/) | Folien beider Lerneinheiten als PDF | beide Lerneinheiten |
 | [`beispiel-app/`](beispiel-app/) | App „Einkaufsliste“ mit allen Stufen und Startcode | beide Lerneinheiten |
 | [`uebungen/uebung-1.md`](uebungen/uebung-1.md) | Übung 1 | Lerneinheit 1 |
 | [`uebungen/uebung-2.md`](uebungen/uebung-2.md) | Übung 2 | Lerneinheit 2 |
@@ -71,13 +72,15 @@ Für die Leistungsbewertung öffnet ihr später genauso `leistungsbewertung/trai
 | [`leistungsbewertung/eigenstaendigkeitserklaerung.pdf`](leistungsbewertung/eigenstaendigkeitserklaerung.pdf) | Erklärung zum Ausfüllen und Unterschreiben | Leistungsbewertung |
 | [`leistungsbewertung/trainingstagebuch/`](leistungsbewertung/trainingstagebuch/) | App „Trainingstagebuch“ | Leistungsbewertung |
 
-Die Folien findet ihr in ILIAS.
+Neben jeder Markdown-Datei liegt derselbe Inhalt als PDF mit gleichem Namen, zum Beispiel `ANLEITUNG.pdf` oder `leistungsbewertung/aufgabe.pdf`. Nehmt die Fassung, die ihr lieber lest.
 
 ## Leistungsbewertung in Kürze
 
-- Einzelarbeit, ca. 4 Stunden, 100 Punkte. Alle Details stehen in [`aufgabe.md`](leistungsbewertung/aufgabe.md).
+- Einzelarbeit, 100 Punkte. Alle Details stehen in [`aufgabe.md`](leistungsbewertung/aufgabe.md).
+- Für die volle Punktzahl reichen fünf Fehler. Pro Fehler: Screenshot vorher, Code ändern, direkt über die geänderte Zeile ein kurzer Kommentar (was und warum), Screenshot nachher. Dazu ein Diagramm per Hand und ein kurzer Prüfauftrag aus der App.
+- Den Freischaltcode für die App zeigen wir am Ende von Lerneinheit 2 auf der Folie „Rahmen und Abgabe“. Im Folien-PDF hier im Repo steht er nicht.
 - Abgabe bis **Montag, 23.11.2026, 0:00 Uhr** (Nacht von Sonntag auf Montag).
-- Abgabe als ZIP-Datei **in ILIAS**, nicht hier. Dazu gehört die unterschriebene Eigenständigkeitserklärung.
+- Abgabe als ZIP-Datei `Vorname_Nachname_Matrikelnummer.zip` **in ILIAS**, nicht hier. Dazu gehört die unterschriebene Eigenständigkeitserklärung.
 - KI-Werkzeuge sind erlaubt, müssen aber angegeben werden.
 - Bitte ladet eure Lösung nicht in ein öffentliches Repo hoch.
 
