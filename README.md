@@ -79,7 +79,7 @@ Neben jeder Markdown-Datei liegt derselbe Inhalt als PDF mit gleichem Namen, zum
 - Einzelarbeit, 100 Punkte. Alle Details stehen in [`aufgabe.md`](leistungsbewertung/aufgabe.md).
 - Für die volle Punktzahl reichen fünf Fehler. Pro Fehler: Screenshot vorher, Code ändern, direkt über die geänderte Zeile ein kurzer Kommentar (was und warum), Screenshot nachher. Dazu ein Diagramm per Hand und ein kurzer Prüfauftrag aus der App.
 - Den Freischaltcode für die App zeigen wir am Ende von Lerneinheit 2 auf der Folie „Rahmen und Abgabe“. Im Folien-PDF hier im Repo steht er nicht.
-- Abgabe bis **Montag, 23.11.2026, 0:00 Uhr** (Nacht von Sonntag auf Montag).
+- Abgabe bis **Montag, 23.11.2026, 23:59 Uhr**.
 - Abgabe als ZIP-Datei `Vorname_Nachname_Matrikelnummer.zip` **in ILIAS**, nicht hier. Dazu gehört die unterschriebene Eigenständigkeitserklärung.
 - KI-Werkzeuge sind erlaubt, müssen aber angegeben werden.
 - Bitte ladet eure Lösung nicht in ein öffentliches Repo hoch.
